@@ -10,7 +10,10 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: test.tex
-      - name: Upload the artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: test
+      - name: Publish LaTeX
+      run : |
+        git config --global user.email "prvnpa4@gmail.com"
+        git config --global user.name "BOT_WORKFLOW"
+        git add -f $PWD/*.pdf
+        git commit -m "WORKFLOW_COMMIT - Update PDFs [skip ci]"
+        git push
