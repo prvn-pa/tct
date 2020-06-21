@@ -12,8 +12,8 @@ jobs:
           root_file: test.tex
       - name: Publish LaTeX
         run : |
-          git config --global user.email "prvnpa4@gmail.com"
-          git config --global user.name "Praveen"
+          git config --global user.email "bot@example.org"
+          git config --global user.name "BOT_WORKFLOW"
           git add -f $PWD/*.pdf
           git commit -m "WORKFLOW_COMMIT - Update PDFs [skip ci]"
           git push origin HEAD:tct
