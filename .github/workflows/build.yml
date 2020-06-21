@@ -11,7 +11,6 @@ jobs:
         with:
           root_file: test.tex
       - name: Upload the artifact
-        uses: actions/upload-artifact@master
+        uses: actions/download-artifact@v2
         with:
-          name: test.pdf
-          path: tct/test.pdf
+          name: test
