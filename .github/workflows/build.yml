@@ -16,4 +16,4 @@ jobs:
           git config --global user.name "Praveen"
           git add -f $PWD/*.pdf
           git commit -m "WORKFLOW_COMMIT - Update PDFs [skip ci]"
-          git push
+          git push origin HEAD:tct
