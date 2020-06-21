@@ -10,3 +10,8 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: test.tex
+      - name: Upload the artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: test.pdf
+          path: ../
