@@ -14,4 +14,4 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: test.pdf
-          path: tct/
+          path: tct/test.pdf
